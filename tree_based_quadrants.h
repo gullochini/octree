@@ -39,7 +39,11 @@ void                child (const quadrant_t * q, quadrant_t * child_quadrant,
  * \param [out]  q      Quadrant that coordinates will be set to coordinates.
  */
 
-void                parent (const quadrant_t * q, quadrant_t * parent_quadrant);
+int                 parent (const quadrant_t * q, quadrant_t * parent_quadrant);
+
+int                 is_parent (const quadrant_t * q, const quadrant_t * p);
+
+int                 is_equal (const quadrant_t * q, const quadrant_t * p);
 
 void                root (quadrant_t * q);
 
